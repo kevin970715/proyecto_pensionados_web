@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es-COL">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic|Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+</head>
+<body>
+    <header id="background-principal">
+            <nav>
+                <div>
+                    <div id="logo"></div>
+                    <h2>MiRoom</h2>
+                </div>
+                <a href="login.html">Ingresa</a>
+            </nav>
+    </header>
+    <section id="background-1">
+        <h1>¡Encuentra Tu Pensión Yá!</h1>
+        <form method="GET">
+            <div>
+                <div>
+                    <p>Hospedaje</p>
+                    <select>
+                        <option>Todas</option>
+                        <option>Por Cupo</option>
+                        <option>Con Todo</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Rango Precio</p>
+                    <div id="Precio">
+                        <input type="text"  placeholder ="Desde">
+                        <input type="text"  placeholder ="Hasta">
+                    </div>
+                </div>
+        	    <div>
+        		    <p >Estrellas</p>
+  				    <p class="clasificacion">
+    				    <input id="radio1" type="radio" name="estrellas" value="5"><!----><label for="radio1">★</label><!----><input id="radio2" type="radio" name="estrellas" value="4"><!----><label for="radio2">★</label><!----><input id="radio3" type="radio" name="estrellas" value="3"><!----><label for="radio3">★</label><!----><input id="radio4" type="radio" name="estrellas" value="2"><!----><label for="radio4">★</label><!----><input id="radio5" type="radio" name="estrellas" value="1"><!----><label for="radio5">★</label>
+  		    		</p>
+  	     		</div>
+            </div>
+  			<input type="submit" value="Buscar">
+		</form>
+    </section>
+    <h3 id="economicos">Los Más Económicos</h3>
+    <section id="background-2">
+    	<div class="form_container">
+    		<h4><a href="#"> Habitación Por Cupo</a></h4>
+    		    <div class="contenedor">
+                    <div class="slider slider11 slider1">
+    				
+    			    </div>
+                    <div class="slider slider12 slider1">
+    				
+    			    </div>
+                    <div class="slider slider13 slider1">
+    				
+    			    </div>
+                    <button class="left" onclick="plusDivs1(-1)">&#60</button>
+                    <button class="right" onclick="plusDivs1(1)">&#62</button>
+                </div>
+    		<p><span>Precio:</span>$250.000</p>
+    		<ul>
+    			<li class="wifi"></li>
+    			<li class="aire"></li>
+    		</ul>
+    		<p class="start-pension">★★★</p>
+    	</div>
+    	<div class="form_container">
+    		<h4><a href="#">Hermosa Habitación</a></h4>
+    		  <div class="contenedor">
+    			  <div class="slider slider2 slider21"  >
+    				
+    			  </div>
+    			  <div class="slider slider2 slider22">
+    				
+    			  </div>
+                  <div class="slider slider2 slider23">
+    				
+    			  </div>
+                  <button class="left" onclick="plusDivs2(-1)">&#60</button>
+                  <button class="right" onclick="plusDivs2(1)">&#62</button>
+    		</div>
+    		<p><span>Precio:</span>$300.000</p>
+    		<ul>
+    			<li class="wifi"></li>
+    			<li class="comida"></li>
+    		</ul>
+    		<p class="start-pension">★★★</p>
+    	</div>
+    	<div class="form_container">
+    		<h4><a href="#"> Arriendo Habitación</a></h4>
+    		      <div class="contenedor">
+    		      	<div class="slider slider3 slider31">
+    		      		
+    		      	</div>
+    		      	<div class="slider slider3 slider32">
+    		      		
+    		      	</div>
+    		      	<div class="slider slider3 slider33">
+    		      		
+    		      	</div>
+                    <button class="left" onclick="plusDivs3(-1)">&#60</button>
+                    <button class="right" onclick="plusDivs3(1)">&#62</button>
+    		      </div>
+    		<p><span>Precio:</span>$200.000</p>
+    		<ul>
+    			<li class="comida"></li>
+    		</ul>
+    		<p class="start-pension">★★</p>
+    	</div>
+    	<div class="form_container">
+    		<h4><a href="#"> Excelente Habitación</a></h4>
+    		      <div class="contenedor">
+    		      	<div class="slider slider4 slider41">
+    		      		
+    		      	</div>
+    		      	<div class="slider slider4 slider42">
+    		      		
+    		      	</div>
+    		      	<div class="slider slider4 slider43">
+    		      		
+    		      	</div>
+                    <button class="left" onclick="plusDivs4(-1)">&#60</button>
+                    <button class="right" onclick="plusDivs4(1)">&#62</button>
+    		      </div>
+    		<p><span>Precio:</span>$400.000</p>
+    		<ul>
+    			<li class="wifi"></li>
+    			<li class="aire"></li>
+    			<li class="comida"></li>
+    		</ul>
+    		<p class="start-pension">★★★★</p>
+    	</div>
+    </section>
+    <section id="background-3">
+        <h3>Encuentra La Pensión Que Se Ajuste A Tus Necesidades</h3>
+    </section>
+    <section id="background-4">
+        <h3>Los Mejores Calificados</h3>
+        <article>    
+            <div id="referencia">
+                <span>Lorem Ipsum 1</span>
+                <span>Lorem Ipsum 2</span>
+                <span>Lorem Ipsum 3</span>
+                <span>Lorem Ipsum 4</span>
+                <span>Lorem Ipsum 5</span>
+            </div>
+            <div id="content">
+                <div id="imagenPrincipal"></div>
+            </div>
+            <div id="mosaico">
+                <div>
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+                <p><a href="#">Ver más</a></p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer>
+        
+    </footer>
+    
+<script type="text/javascript" src="js/slider.js" ></script>
+</body>
+</html>
