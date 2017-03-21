@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <script type="text/javascript" src="js/modernizr-custom.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Antic|Baloo+Bhaina" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main2.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Antic|Baloo+Bhaina|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="font.css">
-    <title>Login</title>
+    <link rel="shortcut icon" href="img/city.png" type="image/x-icon" />
+    <title>MyRoom</title>
 </head>
 <body>
     <header>
-            <nav>
-                <a href="index.html">
-                    <div>
-                        <div id="logo"></div>
-                        <h2>MiRoom</h2>
-                    </div>
-                </a>
-            </nav>
+       <a href="index.html">
+           <div>
+               <div id="logo"></div>
+               <h2>MyRoom</h2>
+           </div>
+       </a>
+       <nav>
+           <ul>
+               <li><a href="Catalogo.html">Ver Catalogo</a></li>
+           </ul>
+       </nav>
     </header>
     <div class="content">
       <div class="login__container">
@@ -30,20 +31,19 @@
             <h2 class="login__title">Iniciar <span>Sesión</span></h2>
           </div>
         
-          <form class="login__form">
-              <input type="text" placeholder="&#128100; usuario" required autofocus>
-              <input type="password" placeholder="&#x1F512; contraseña" required>
-              <input class="btn__submit" type="submit" value="ENTRAR">
-              <a class="form__recover" href="">¿Olvidaste la contraseña?</a>
-              <h3 class="form__text">¿No tienes una cuenta?<br><span>Regístrate mediante las redes sociales</span></h3>
-              <div class="social-bar">
-                <a href="" class="icon icon-facebook"></a>
-                <a href="" class="icon icon-twitter"></a>
-                <a href="" class="icon icon-google-plus3"></a>
-                <a href="" class="icon icon-linkedin2"></a>
-             </div>
+          <form id="login_form" class="login__form" method="post">
+              <input name="usuario" id="usuario" type="text" placeholder="&#128100; usuario" required autofocus>
+              <input name="contraseña" id="contraseña" type="password" placeholder="&#x1F512; contraseña" required>
+              <p>inquilino:</p>
+              <input type="radio" name="checar" id="inquilino">
+              <p>propietario:</p>
+              <input type="radio" name="checar"  id="propietario">
+              <input id="botonEnviar" class="btn__submit" type="submit" onclick="Consultar()" value="ENTRAR">
+              <a class="form__recover" href="#">¿Olvidaste la contraseña?</a>
           </form>
       </div>
     </div>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/servicios.js" ></script>
 </body>
 </html>

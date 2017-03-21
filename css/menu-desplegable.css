@@ -1,0 +1,72 @@
+*{
+    color: #4D2517;
+    font-family: 'Antic', sans-serif;
+    box-sizing: border-box;
+}
+body{
+	overflow-x: hidden;
+}
+.sidebar{
+	position: absolute;
+	width: 250px;
+	height: auto;
+	right: 0;
+	background-color: rgb(242, 242, 242);
+	color: rgb(102, 102, 102);
+	outline: 1px solid rgb(200, 200, 200);
+	top: 51px;
+	transform: translateX(250px);
+	transition: all 0.5s ease;
+	z-index: 999;
+}
+.ayuda{
+	transform: translateX(0px);
+	transition: all 0.5s ease;
+}
+.sidebar >div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: rgb(200, 200, 200); 
+}
+.sidebar div#logoPropietario{
+	width: 40px;
+	height: 40px;
+	margin: 0 4px;
+	background-image: url(../img/account.png);
+	background-size: cover;
+	border-radius: 100%;
+	background-color: rgb(255,255,255);
+}
+.sidebar h3{
+	padding: 15px;
+	color: orange;
+}
+.sidebar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.sidebar li{
+	transition: all 0.3s;
+}
+.sidebar li:hover{
+	background-color: rgb(200, 200, 200);
+	border-left: 6px solid #4D2517; 
+}
+.sidebar a{
+	display: block;
+	padding: 15px;
+	color: #4D2517;
+	text-decoration: none;
+	font-size: 20px;
+}
+.contenido{
+	padding-right: 5px;
+}
+.menu-bar{
+	cursor: pointer;
+}
+.abrir{
+	transform: translateX(-250px);
+}

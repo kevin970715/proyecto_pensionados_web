@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-COL">
+<head>
+	<title>ver mi habitacion</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/habitacion_inquilino.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/nivo-slider.css">
+	<link rel="stylesheet" href="css/nuevo_slider.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-desplegable.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Antic|Cantarell|Luckiest+Guy|Permanent+Marker" rel="stylesheet">
+	
+
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="js/jquery.nivo.slider.js" ></script>
+	<script type="text/javascript"> 
+
+              $(window).on('load', function() {
+                 $('#slider_1').nivoSlider(); 
+               }); 
+
+     </script>
+</head>
+<body>
+    <header id="background-principal">
+        <div id="cabecera">
+            <a href="vistaPropietario.html">
+                <div>
+                    <div id="logo"></div>
+                    <h2>MyRoom</h2>
+                </div>
+            </a>
+            <div class="contenido">
+                <img src="img/menu.png" class="menu-bar">
+            </div>
+            <div class="sidebar">
+                <div>
+                    <div id="logoPropietario"></div>
+                    <h3 id="menu">MENÚ</h3>
+                </div>
+                <ul>
+                   <li><a href="#">Configuración de cuenta</a></li>
+                    <li><a href="index.html">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+
+<div  class="area1">
+   
+     <div class="contenedor_imagen">
+       <div class="slider-wrapper theme-nuevo_slider">
+
+                <div id="slider_1" class="nivoSlider">     
+                   <img src="img/ocho.jpg" alt=""  title="#htmlcaption1"/>    
+                   <img src="img/nueve.jpg" alt="" title="#htmlcaption2" />     
+                   <img src="img/diez.jpg" alt="" title="#htmlcaption3" />     
+                  <img src="img/once.jpg" alt="" title="#htmlcaption4"/> 
+                </div> 
+
+          </div>
+
+                  <div id="htmlcaption1" class="nivo-html-caption">     
+                     <h1></h1>
+                  </div>
+                  <div id="htmlcaption2" class="nivo-html-caption">     
+                  <h1></h1>
+                  </div>
+                  <div id="htmlcaption3" class="nivo-html-caption">     
+                  <h1></h1>
+                  </div>
+                  <div id="htmlcaption4" class="nivo-html-caption">     
+                  <h1></h1> <!--/*aqui coloco los comenarios que es tan por encima de las imagenes*/-->
+                  </div>      
+     </div>
+                   <div class="titulo_estrellas">
+               
+
+                                <div class="estrellas">
+
+                                     <span> Califica tu habitacion</span>
+
+                                           <p class="clasificacion">
+                                                <input id="radio1" type="radio" name="estrellas" value="5"><!----><label for="radio1">★</label><!---->
+                                                <input id="radio2" type="radio" name="estrellas" value="4"><!----><label for="radio2">★</label><!---->
+                                                <input id="radio3" type="radio" name="estrellas" value="3"><!----><label for="radio3">★</label><!---->
+                                                <input id="radio4" type="radio" name="estrellas" value="2"><!----><label for="radio4">★</label><!---->
+                                                <input id="radio5" type="radio" name="estrellas" value="1"><!----><label for="radio5">★</label></p>
+                      
+                 
+                                  </div>
+
+                   </div>
+
+                        
+                      
+                            <div class="formulario_comentario"> 
+                                    
+                                <div class="informacion">
+                                    <h1>Ingrese su comentario</h1>
+                                    <p>Es de vital importancia tu opinion.<br>Ayudanos a mejorar nuestro servicio</p>
+                                </div>
+                                <div id="comentario">
+                                   
+                                </div>
+                                <div id="centrarComentario" >
+                                    <img src="img/user-tie.png" alt="usuario" class="imagen1">
+                                    <textarea name="caja_comentarios" id="comments" class="textarea"></textarea>
+                                </div>
+                                <input type="submit" class="enviar" onclick="comentar()">
+                             </div>
+
+  
+ </div>
+
+
+
+   </section>
+ <script type="text/javascript" src="js/menu.js"></script>
+ <script type="text/javascript" src="js/comentario.js"></script>
+</body>
+  <footer> </footer>
+</html>

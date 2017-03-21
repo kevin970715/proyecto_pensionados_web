@@ -1,0 +1,278 @@
+
+*{
+    color: #4D2517;
+    font-family: 'Antic', sans-serif;
+}
+header{
+	align-items: center;
+	background-color: white;
+	box-shadow: 1px 1px 4px gray;
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	justify-content: space-between;
+	width: 100%;
+}
+header > a{
+    text-decoration: none;
+    height: 100%;
+    margin-left: 20px;
+}
+header > a >div{
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header> a> div> div#logo{
+	background-image: url(../img/city.png);
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+header> a> div>h2{
+	font-size: 1.7em;
+	margin-left: 10px;
+}
+nav{
+	margin-right: 20px;
+	height: 100%;
+}
+nav >ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+nav>ul>li{
+	height: 100%;
+}
+nav>ul>li>a{
+	color: orange;
+	text-decoration: none;
+	font-size: 100%;
+	padding: 0 10px 0 10px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+nav>ul>li>a:hover{
+	background-color: rgb(242, 242, 242);
+}
+section{
+	align-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: center;
+	width: 100%;
+}
+
+h3#economicos{
+	font-size: 2.5em;
+	text-align: center;
+	padding: 20px 0;
+}
+section{
+	margin-top: 2%;
+}
+section> div.form_container{
+	border-radius: 10px;
+	box-shadow: 0 0 10px black;
+	height: 310px;
+	margin-bottom: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 290px;
+}
+
+section> div h4{
+	font-size: 20px;
+	font-style: italic;
+	padding: 8px 0;
+	text-align: center;
+}
+h4 > a{
+	color: #4D2517;
+	text-decoration: none;
+}
+section div.form_container div.contenedor{
+	height: 60%;
+    position: relative;
+    width: 100%;
+}
+section div p{
+	padding: 2px 10px;
+}
+section div span{
+	font-size: 18px;
+	font-weight: bolder;
+	margin-right: 5px;
+}
+section >div >ul{
+	margin:0;
+	padding: 2px 10px;
+	height: 20px;
+}
+section >div >ul> li{
+	background-size: cover;
+	display: inline-block;
+	height: 20px;
+	margin-right: 10px;
+	width: 20px;
+}
+li.wifi{
+	background-image: url(../img/signal-variant.svg);
+}
+li.aire{
+	background-image: url(../img/snowflake.svg);
+}
+li.comida{
+	background-image: url(../img/silverware.svg);
+}
+section >div p.start-pension{
+	color: orange;
+	font-size: 20px;
+	float: right;
+}
+
+section div.slider{
+	background-position: no-repeat center center;
+	background-size: cover;
+	height: 100%; 
+	position: absolute;
+	width: 100%;
+}
+
+section div.slider11{
+	background-image: url(../img/slider1-1.jpg);
+}
+section div.slider12{
+	background-image: url(../img/slider1-2.jpg);
+}
+section div.slider13{
+	background-image: url(../img/slider1-3.jpg);
+}
+section div.slider21{
+	background-image: url(../img/slider2-1.jpg);
+}
+section div.slider22{
+	background-image: url(../img/slider2-2.jpg);
+}
+section div.slider23{
+	background-image: url(../img/slider2-3.jpg);
+}
+section div.slider31{
+	background-image: url(../img/slider3-1.jpg);
+}
+
+section div.slider32{
+	background-image: url(../img/slider3-2.jpg);
+}
+section div.slider33{
+	background-image: url(../img/slider3-3.jpg);
+}
+section div.slider41{
+	background-image: url(../img/slider4-1.jpg);
+}
+
+section div.slider42{
+	background-image: url(../img/slider4-2.jpg);
+}
+section div.slider43{
+	background-image: url(../img/slider4-3.jpg);
+}
+.wifi:hover:after{
+	background-color: black;
+	border-radius: 2px;
+	color: white;
+	content: "wifi";
+	margin-top: 25px;
+	padding: 5px 10px;
+	position: absolute;
+}
+.aire:hover:after{
+	background-color: black;
+	border-radius: 2px;
+	color: white;
+	content: "Aire Acondicionado";
+	margin-top: 25px;
+	padding: 5px 10px;
+	position: absolute;
+}
+.comida:hover:after{
+	background-color: black;
+	border-radius: 2px;
+	color: white;
+	content: "Las tres comidas";
+	margin-top: 25px;
+	padding: 5px 10px;
+	position: absolute;
+}
+button.right{
+	right: 0;		
+}
+button.left{
+	left: 0;
+}
+.left, .right{
+	background-color: rgba(255,255,255,0.8);
+	border: none;
+	color: black;
+	font-size: 1em;
+	height: 30%;
+	position: absolute;
+	top: 35%;
+	width: 10%;
+	z-index: 99;
+}
+.left:hover, .right:hover{
+	cursor: pointer;
+}
+@media screen and (max-width: 500px){
+	header a{
+		margin-left: 2px;
+	}
+	nav{
+		margin-right: 0px;
+	}
+	nav ul{
+		padding: 0;
+	}
+	section div.form_container{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	header> a> div> div#logo{
+		width: 35px;
+		height: 35px;
+	}
+	header> a> div>h2{
+		font-size: 1.3em;
+		margin-left: 2px;
+	}
+	h3{
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	header{
+		height: 30px;
+	}
+	#logo{
+		display: none;
+	}
+	header> a> div>h2{
+		font-size: 1em;
+		margin-left: 2px;
+	}
+	nav>ul>li>a{
+		font-size: 90%;
+		padding: 0 1px;
+	}
+	h3{
+		display: none;
+	}
+}
